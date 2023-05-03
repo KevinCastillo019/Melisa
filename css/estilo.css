@@ -26,7 +26,7 @@ a{
     font-family: sans-serif;
     font-weight: 700;
     border-radius: 10px;
-    margin: 600px;
+    margin-left: 600px;
     margin-top: 0px;
     padding: 15px 30px;
     background-color: orangered;
@@ -40,8 +40,9 @@ a{
     font-family: sans-serif;
     font-weight: 600;
     border-radius: 10px;
-    margin: 600px;
-    margin-top: 20px;
+    margin-left: 600px;
+    margin-bottom: 30px;
+    margin-top: 30px;
     padding: 15px 30px;
     background-color: orangered;
     color: white;
@@ -172,4 +173,13 @@ header{
    -ms- column-count:3;
    -ms- column-gap:30px;
    -ms- column-rule:2px dotted silver;
+}
+}
+#franja_final{
+   width:100%;
+   position:absolute;
+   left:0;
+   background-color:#orangered;
+   height:60px;
+   border-top:6px black solid;
 }
