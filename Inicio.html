@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title> Mi bebé </title>
+</head>
+<body bgcolor="#FFAE82">
+
+	<header>
+		<img src="imagenes/banner.png">
+	</header>
+	<br>
+	<br>
+	<br>
+	<br>
+
+	<h1 align="center"> SELECCIONA NUESTRA FECHA ESPECIAL </h1>
+
+	<form>
+  	<input type="date" id="fecha" name="fecha" required>
+ 	<br><br>
+  	<a  target="_blank" onclick="validarFecha()">
+       	Comenzar</a>
+</form>
+
+<script>
+function validarFecha() {
+  var fecha = document.getElementById("fecha").value;
+  if (fecha == "2021-04-20") {
+    window.location.href = "queharemos.html";
+  } else {
+    alert("QUÉ PASO NEGRITA, NO TE SABES NUESTRO ANIVERSARIO?");
+  }
+}
+</script>
+
+
+       		
+
+</body>
+</html>

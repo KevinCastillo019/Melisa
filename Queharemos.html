@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<title>Nuestro aniversario de vacaciones</title>
+</head>
+<body bgcolor="#FFAE82">
+
+		<header>
+		<img src="imagenes/banner.png">
+		</header>
+
+		<p>QUIERO QUE EN NUESTRAS VACACIONES NOS ESCAPEMOS A UN LUGAR</p>
+		<p id="secun">Hemos estado ahorrando y siento que lo mejor es gastar ese dinero en un viaje los dositos, así que decidí que nuestro viaje se hará el 23 de junio del 2023 a las 8:00 a.m.</p>
+		<p id="secun">Te dejo una cuenta atrás para que sepas cuanto falta para nuesto viaje: </p>
+
+		<p id="demo"></p>
+
+		<script>
+		// Establecer la fecha en la que estamos contando hacia atrás
+		var countDownDate = new Date("June 23, 2023 08:00:00").getTime();
+
+		// Actualizar la cuenta regresiva cada 1 segundo
+		var x = setInterval(function() {
+
+	 	// Obtener la fecha y la hora de hoy
+  		var now = new Date().getTime();
+    
+  		// Encuentre la distancia entre ahora y la fecha de la cuenta regresiva
+  		var distance = countDownDate - now;
+    
+  		// Cálculos de tiempo para días, horas, minutos y segundos.
+  		var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  		var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  		var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  		var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  		// Muestra el resultado en un elemento con id="demo"
+  		document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  		+ minutes + "m " + seconds + "s ";
+    
+  		// Si la cuenta regresiva ha terminado, escribe un texto 
+  		if (distance < 0) {
+    		clearInterval(x);
+    		document.getElementById("demo").innerHTML = "FINALIZADA";
+  		}
+			}, 1000);
+		</script>
+
+		<a id="boton2" href="Lugar.html" target="_blank">¿A donde iremos?</a>
+
+</body>
+</html>
