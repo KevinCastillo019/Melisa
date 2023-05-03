@@ -11,9 +11,9 @@ input[type="date"] {
     display: flex;
     flex-direction: column;
     margin-top: 70px;
-    margin-left: 300px;
+    margin-left: 215px;
     border: none;
-    width: 700px;
+    width: 900px;
     border-bottom: 2px solid #000000;
     background-color: #white;
     padding: 10px;
@@ -122,7 +122,11 @@ section{
   box-shadow:0px 0px 4px gray;
   float: left;
 }
-.cuadro2{
+#cuadro2{
+   margin-left: 120px;
+   margin-right: 0px;
+}
+.cuadross2{
     width:700px;
     border:1px lightgray solid;
     border-radius:3px;
@@ -135,10 +139,7 @@ section{
     float: left;
 }
 }
-#cuadro2{
-   margin-left: 120px;
-   margin-right: 0px;
-}
+
 #imagen1{
    transform:rotate(-2deg);
    -webkit-transform:rotate(-2deg);
